@@ -1,7 +1,9 @@
 #!/bin/sh
 
+PROJECT="$(pwd)"
+
 # Ask setup questions
-read -e -p "Please type your project root: " -i "$(pwd)/blog" ROOT
+read -e -p "Please type your project root: " -i "$PROJECT/blog" ROOT
 
 # Dump the .env file for docker-compose
 cat <<EOF > blog/.env
