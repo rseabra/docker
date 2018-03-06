@@ -4,7 +4,7 @@ This is merely a docker test case, will likely be removed somewhere in the futur
 
 ## Easy setup
 
-1. Run `./build.sh` with your tags, eg `sudo ./build.sh ruiseabra/wordpress`. **If you use something different from ruiseabra/wordpress as tags, remember to change blog/docker-compose.yaml or it will download my image from docker hub.**
+1. Run `./build.sh` with your tags, eg `sudo ./build.sh ruiseabra/wordpress`. **If you use something different from ruiseabra/wordpress as tags, remember to change blog/docker-compose.yaml or it will download [my image from docker hub](https://hub.docker.com/r/ruiseabra/wordpress/).**
 1. (OPTIONAL) Define your own values for blog/etc/secrets-db (admin root, db name, db user and db user password)
 1. Run `./setup.sh`
 
