@@ -4,8 +4,8 @@ This is merely a docker test case, will likely be removed somewhere in the futur
 
 ## Easy setup
 
-1. Run `./build.sh` with your tags, eg `sudo ./build.sh ruiseabra/wordpress`. **If you use something different from ruiseabra/wordpress as tags, remember to change blog/docker-compose.yaml or it will download [my image from docker hub](https://hub.docker.com/r/ruiseabra/wordpress/).**
-1. (OPTIONAL) Define your own values for blog/etc/secrets-db (admin root, db name, db user and db user password)
+1. (OPTIONAL) Run `./build.sh` with your tags, eg `sudo ./build.sh ruiseabra/wordpress`. **If you use something different from ruiseabra/wordpress as tags, remember to change blog/docker-compose.yaml or it will download [my image from docker hub](https://hub.docker.com/r/ruiseabra/wordpress/).**
+1. (OPTIONAL) Define your own values for blog/etc/secrets-db (admin root, db name, db user and db user password), it's not really needed but... security! ;)
 1. Run `./setup.sh`
 
 You will end up with a brand new blog waiting to be initialized.
@@ -16,6 +16,8 @@ You will end up with a brand new blog waiting to be initialized.
 This Dockerfile is for building a wordpress ready image based off an official Apache and PHP 7.1 image.
 
 One can build it by adapting the tag in the following example command `sudo docker build -t ruiseabra/wordpress .`
+
+If you use something different from ruiseabra/wordpress as tags, remember to change blog/docker-compose.yaml or it will download [my image from docker hub](https://hub.docker.com/r/ruiseabra/wordpress/).
 
 ## blog/
 
