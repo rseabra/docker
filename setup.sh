@@ -20,3 +20,7 @@ if [ ! -e latest.tar.gz ]; then
 	wget https://wordpress.org/latest.tar.gz
 fi
 tar xzvf latest.tar.gz
+
+# Launch project
+cd $PROJECT/blog
+docker-compose config && sudo docker-compose up -d
